@@ -9,21 +9,25 @@ let package = Package(
     products: [
         .library(
             name: "Forked",
+            type: .dynamic,
             targets: ["Forked"]),
         .library(
             name: "ForkedMerge",
+            type: .dynamic,
             targets: ["ForkedMerge"]),
         .library(
             name: "ForkedModel",
+            type: .dynamic,
             targets: ["ForkedModel"]),
         .library(
             name: "ForkedCloudKit",
+            type: .dynamic,
             targets: ["ForkedCloudKit"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-async-algorithms", from: "1.0.2"),
-        .package(url: "https://github.com/apple/swift-syntax.git", from: "509.0.0"),
+        .package(url: "https://github.com/apple/swift-syntax.git", from: "603.0.0"),
     ],
     targets: [
         .macro(
