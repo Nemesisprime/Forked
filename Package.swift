@@ -9,15 +9,19 @@ let package = Package(
     products: [
         .library(
             name: "Forked",
+            type: .dynamic,
             targets: ["Forked"]),
         .library(
             name: "ForkedMerge",
+            type: .dynamic,
             targets: ["ForkedMerge"]),
         .library(
             name: "ForkedModel",
+            type: .dynamic,
             targets: ["ForkedModel"]),
         .library(
             name: "ForkedCloudKit",
+            type: .dynamic,
             targets: ["ForkedCloudKit"]),
     ],
     dependencies: [
